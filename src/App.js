@@ -22,8 +22,9 @@ class App extends Component {
     )
     const headers = {
       'Content-Type': 'multipart/form-data'
-  
     }
+
+    const password = 'Lifafa@12345';
     
     // call api
     axios.post("https://9a9lekxxba.execute-api.eu-north-1.amazonaws.com/prod/cpe-file-upload", formData, {headers: headers} ).then(() => {
